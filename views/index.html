@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top Trending News</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="/style/style.css" />
+	<script>
+	window.onload = function() {
+	    document.getElementById("searchFilter").focus();
+	    console.log(document.getElementById("searchFilter").value);
+	};
+	</script>
+</head>
+<body>
+	<div class = "container">
+	<div class = "banner">
+		<img class="newappIcon" src="images/dailyhunt.png">
+		<p class = "appTitle">
+			Top Trending News
+		</p>
+	</div>
+
+<header>
+	<div class="search" >
+		Enter topic : <input type=search name="searchFilter" id="searchFilter" value="" results=5 autofocus alt="Enter topic to search" />
+		<button id="btnSearch" name="btnSearch" class="searchbutton" onclick="loadItems();" title="Search" ><img src ="images/search.png" alt="Search News" width="25px" height="25px"/></button>
+
+	</div>
+</header>
+	<section>
+		<table id='notes' class='records' border='0' cellspacing='0' cellpadding='0'><tbody></tbody></table>
+	</section>
+	<footer>
+		<div id="loadingImage" style="display:none"></div>
+		<br><br><br><br><br>
+		<div id="errorDiv" class='errorMsg'></div>
+	</footer>
+	<script type="text/javascript" src="/scripts/util.js"></script>
+	<script type="text/javascript" src="/scripts/index.js"></script>
+	<div id="myImage"><div id="innerImg"></div></div>
+	<br><br><br>
+	</div>
+	<div id="myModal" class="modal">
+	  <div class="modal-content">
+	    <span class="close" id="close" onclick="closeModelDialog()">&times;</span>
+	    <div id="detailContent"/>
+	  </div>
+
+	</div>
+</body>
+</html>

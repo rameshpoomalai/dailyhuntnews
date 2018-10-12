@@ -1,0 +1,259 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+body,html {
+	background-color: #f5f7fa;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: Lato,sans-serif;
+	color: #283D56;
+}
+
+/* header footer common */
+header, footer {
+	width: 100%;
+	text-align: center;
+}
+
+.container {
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.banner {
+	background: #5586D6;
+	color: #fff;
+	padding: 10px;
+}
+
+/* positions */
+header {
+	padding-top: 20px;
+	font-size: 1.3em;
+}
+footer {
+	padding: 10px;
+	font-size: .8rem;
+}
+.title, .tips {
+	height: 30px;
+	padding-top: 20px;
+	position: relative;
+}
+.title {
+	border-radius: 40px 40px 0 0;
+}
+.tips {
+	border-radius: 0 0 40px 40px;
+}
+
+table {
+	table-layout: fixed;
+	word-wrap: break-word;
+	position: relative;
+	border-collapse: collapse;
+	width: 100%;
+}
+.content {
+	font-size: .8rem;
+	width: 30%;
+	vertical-align: top;
+}
+.contentName {
+	padding: 10px;
+	padding-left: 20px;
+	width: 25%;
+	font-weight:bold;
+	vertical-align: top;
+}
+.contentDetails {
+	padding: 10px;
+}
+.contentAction {
+	width: 10%;
+	padding-right: 20px;
+	text-align: right;
+}
+
+.nameText {
+	font-weight: bold;
+}
+.records textarea {
+	height: 1.2em;
+	font-size: 1em;
+	resize: none;
+	width: 100%;
+	border: none;
+	overflow: hidden;
+	background-color: transparent;
+	font-size: .9em;
+}
+
+/* buttons */
+.detailBtn {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.addBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.detailBtn img{
+	width: 20px;
+	height: 20px;
+}
+.deleteBtn{
+  background-image: url("../images/sprite.png");
+  background-position: -5px -568px;
+  width: 18px;
+  height: 18px;
+    display:inline-block;
+}
+
+tr:hover .deleteBtn {
+
+	cursor: pointer;
+}
+
+
+.tableRows{
+	border: 2px solid #DFE3E6
+}
+
+
+
+.fieldname {
+	text-align: right;
+	border-right: 1px solid #fff;
+}
+
+.errorMsg {
+	color: red;
+	font-weight:normal;
+}
+.newappIcon {
+	position: absolute;
+  left: 20px;
+  top: 10px;
+	max-width: 100px;
+	max-height: 100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.appTitle {
+	padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+	font-size: 1.5rem;
+}
+
+.description {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.infoImg {
+	cursor: pointer;
+}
+.flexBox {
+	display: flex;
+	flex-wrap: wrap;
+}
+.contentTiles {
+		padding: 10px;
+		font-size: .8rem;
+}
+.uploadBox {
+  margin: 0 auto;
+  text-align: center;
+}
+.appinfo {
+	padding: 10px;
+}
+input[type=search] {
+	padding: 4px;            /* Overridden by padding: 1px; */
+	font-family: Georgia;     /* Overridden by font: -webkit-small-control; */
+	border: 2px solid black;  /* Overridden by border: 2px inset; */
+	background: white;          /* Overridden by background-color: white; */
+	line-height: 1;
+}
+.search {
+	padding: 5px;            /* Overridden by padding: 1px; */
+	font-family: Georgia;     /* Overridden by font: -webkit-small-control; */
+	line-height: 1;
+	vertical-align: middle;
+}
+
+
+
+.searchbutton{
+
+	  background: none;
+	  border: none;
+	  cursor: pointer;
+		padding: 0px;
+		border: 0px ;
+		vertical-align: middle;
+
+}
+
+.detailBtn{
+  background-image: url("../images/detail.png");
+  background-position: -5px -568px;
+  width: 18px;
+  height: 18px;
+    display:inline-block;
+}
+
+/* The Modal (background) */
+.modal {
+	 display: none; /* Hidden by default */
+	 position: fixed; /* Stay in place */
+	 z-index: 1; /* Sit on top */
+	 left: 0;
+	 top: 0;
+	 width: 100%; /* Full width */
+	 height: 100%; /* Full height */
+	 overflow: auto; /* Enable scroll if needed */
+	 background-color: rgb(0,0,0); /* Fallback color */
+	 background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+	 background-color: #fefefe;
+	 margin: 15% auto; /* 15% from the top and centered */
+	 padding: 20px;
+	 border: 1px solid #888;
+	 width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+	 color: #aaa;
+	 float: right;
+	 font-size: 28px;
+	 font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	 color: black;
+	 text-decoration: none;
+	 cursor: pointer;
+}
+.contentHeader
+{
+	padding: 10px;
+	font: bold 15px arial, sans-serif;
+
+}

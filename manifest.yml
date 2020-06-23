@@ -3,3 +3,4 @@ applications:
 - name: dailyhuntnews
   random-route: true
   memory: 256M
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
